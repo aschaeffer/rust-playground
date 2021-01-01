@@ -1,3 +1,8 @@
+mod builder_test;
+
+#[macro_use]
+extern crate derive_builder;
+
 fn main() {
-    println!("Hello, world!");
+    builder_test::get_point_inbound();
 }
