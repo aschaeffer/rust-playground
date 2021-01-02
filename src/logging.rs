@@ -1,6 +1,5 @@
 use log::{Record, Level, Metadata, LevelFilter};
 
-
 static CONSOLE_LOGGER: ConsoleLogger = ConsoleLogger;
 
 struct ConsoleLogger;
