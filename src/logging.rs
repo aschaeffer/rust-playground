@@ -1,6 +1,4 @@
-use log::{Record, Level, Metadata, LevelFilter, SetLoggerError};
-use log::{debug, info, warn, error};
-use env_logger::{Builder, Target};
+use log::{Record, Level, Metadata, LevelFilter};
 
 
 static CONSOLE_LOGGER: ConsoleLogger = ConsoleLogger;
