@@ -2,6 +2,7 @@ mod builder_test;
 mod dependency_injection_test;
 mod threading_test;
 mod logging;
+mod random;
 mod glfw_test;
 
 #[macro_use]
@@ -12,5 +13,6 @@ fn main() {
     threading_test::threading_tests();
     dependency_injection_test::dependency_injection_tests();
     logging::logging_tests();
+    random::random_tests();
     glfw_test::glfw_all_tests();
 }
