@@ -17,6 +17,8 @@ waiter_di = "1.6.2"
 config = "0.9"
 serde = { version = "1.0.115", features = [ "derive" ] }
 regex = "1.3.9"
+log = { version = "0.4", features = ["std", "serde"] }
+env_logger = "0.8.2"
 
 # indradb-lib = "1"
 # actix-web = "3"
