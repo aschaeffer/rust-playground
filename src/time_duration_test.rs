@@ -1,5 +1,4 @@
 use std::time::Instant;
-use rand::Rng;
 use rand::distributions::{Distribution};
 
 pub fn roll_dices (how_many_sixes_roll: i32) -> i32 {
