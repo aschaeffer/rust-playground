@@ -6,6 +6,7 @@ mod random;
 mod vector_test;
 mod ansi_test;
 mod time_duration_test;
+mod hardware_test;
 mod glfw_test;
 
 #[macro_use]
@@ -20,5 +21,6 @@ fn main() {
     vector_test::vector_tests();
     ansi_test::ansi_tests();
     time_duration_test::time_duration_tests();
+    hardware_test::hardware_tests();
     glfw_test::glfw_all_tests();
 }
