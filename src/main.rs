@@ -9,6 +9,7 @@ mod time_duration_test;
 mod hardware_test;
 mod linear_algebra_test;
 mod trigonometry_test;
+mod regex_test;
 mod glfw_test;
 
 #[macro_use]
@@ -26,5 +27,6 @@ fn main() {
     hardware_test::hardware_tests();
     linear_algebra_test::linear_algebra_tests();
     trigonometry_test::trigonometry_tests();
+    regex_test::regex_tests();
     glfw_test::glfw_all_tests();
 }
