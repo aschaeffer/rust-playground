@@ -1,6 +1,6 @@
 use rand::Rng;
 use rand::distributions::{Distribution,Alphanumeric};
-use rand_distr::{Normal, NormalError};
+use rand_distr::NormalError;
 
 fn random_numbers() {
     let mut rng = rand::thread_rng();
