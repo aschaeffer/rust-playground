@@ -3,6 +3,7 @@ mod dependency_injection_test;
 mod threading_test;
 mod logging;
 mod random;
+mod vector_test;
 mod glfw_test;
 
 #[macro_use]
@@ -14,5 +15,6 @@ fn main() {
     dependency_injection_test::dependency_injection_tests();
     logging::logging_tests();
     random::random_tests();
+    vector_test::vector_tests();
     glfw_test::glfw_all_tests();
 }
