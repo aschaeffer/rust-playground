@@ -7,6 +7,7 @@ mod vector_test;
 mod ansi_test;
 mod time_duration_test;
 mod hardware_test;
+mod linear_algebra_test;
 mod glfw_test;
 
 #[macro_use]
@@ -22,5 +23,6 @@ fn main() {
     ansi_test::ansi_tests();
     time_duration_test::time_duration_tests();
     hardware_test::hardware_tests();
+    linear_algebra_test::linear_algebra_tests();
     glfw_test::glfw_all_tests();
 }
