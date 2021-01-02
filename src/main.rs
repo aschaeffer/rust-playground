@@ -4,6 +4,7 @@ mod threading_test;
 mod logging;
 mod random;
 mod vector_test;
+mod ansi_test;
 mod glfw_test;
 
 #[macro_use]
@@ -16,5 +17,6 @@ fn main() {
     logging::logging_tests();
     random::random_tests();
     vector_test::vector_tests();
+    ansi_test::ansi_tests();
     glfw_test::glfw_all_tests();
 }
