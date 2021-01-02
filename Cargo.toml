@@ -1,8 +1,11 @@
 [package]
 name = "rust-playground"
+description = "Dependency injection"
 version = "0.1.0"
 authors = ["Andreas Schaeffer"]
 edition = "2018"
+license = "MIT"
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -10,3 +13,15 @@ edition = "2018"
 derive_builder = "0.9.0"
 rand = "0.8.0"
 glfw = "0.41.0"
+waiter_di = "1.6.2"
+# waiter_di = { version ="1.6.2", features = [ "async" ] }
+config = "0.9"
+serde = { version = "1.0.115", features = [ "derive" ] }
+regex = "1.3.9"
+
+#indradb-lib = "1"
+# actix-web = "3"
+
+#waiter_codegen = { path = "crates/waiter_codegen", version = "1.6.4" }
+#[features]
+#async = [ "waiter_codegen/async" ]
