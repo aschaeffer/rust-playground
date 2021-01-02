@@ -1,7 +1,6 @@
-use std::time::{Duration, Instant};
+use std::time::Instant;
 use rand::Rng;
 use rand::distributions::{Distribution};
-use rand_distr::{Normal, NormalError};
 
 pub fn roll_dices (how_many_sixes_roll: i32) -> i32 {
     let mut rng = rand::thread_rng();
