@@ -10,7 +10,9 @@ mod hardware_test;
 mod linear_algebra_test;
 mod trigonometry_test;
 mod regex_test;
-mod glfw_test;
+mod bidule_test;
+// mod glfw_test;
+mod bidule_glfw_test;
 
 #[macro_use]
 extern crate derive_builder;

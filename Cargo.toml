@@ -25,6 +25,7 @@ env_logger = "0.8.2"
 ansi_term = "0.12.1"
 num_cpus = "1.13.0"
 ndarray = "0.14.0"
+bidule = "0.2.0"
 
 # indradb-lib = "1"
 # actix-web = "3"
