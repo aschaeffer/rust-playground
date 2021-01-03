@@ -13,6 +13,7 @@ mod regex_test;
 mod bidule_test;
 mod deno_test;
 // mod glfw_test;
+mod static_resources_test;
 mod bidule_glfw_test;
 
 #[macro_use]
@@ -33,6 +34,7 @@ fn main() {
     regex_test::regex_tests();
     bidule_test::bidule_tests();
     // glfw_test::glfw_all_tests();
+    static_resources_test::static_resources_tests();
     deno_test::deno_tests();
     bidule_glfw_test::bidule_glfw_tests();
 }

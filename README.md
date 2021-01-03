@@ -13,5 +13,6 @@
   - [x] Execute JavaScript Files
   - [x] Define functions in Rust which can be used in JavaScript
   - [x] Low-Level Access to the V8 library
+- [x] Include static resources into the binary
 - [ ] In-Memory Graph-Database (Entity System)
 - [ ] Use Vulkan-Renderer as a Library (C++)
