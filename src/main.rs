@@ -30,5 +30,7 @@ fn main() {
     linear_algebra_test::linear_algebra_tests();
     trigonometry_test::trigonometry_tests();
     regex_test::regex_tests();
-    glfw_test::glfw_all_tests();
+    bidule_test::bidule_tests();
+    // glfw_test::glfw_all_tests();
+    bidule_glfw_test::bidule_glfw_tests();
 }
