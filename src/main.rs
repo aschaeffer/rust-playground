@@ -15,6 +15,7 @@ mod deno_test;
 // mod glfw_test;
 mod static_resources_test;
 mod bidule_glfw_test;
+mod indradb_test;
 
 #[macro_use]
 extern crate derive_builder;
@@ -36,5 +37,6 @@ fn main() {
     // glfw_test::glfw_all_tests();
     static_resources_test::static_resources_tests();
     deno_test::deno_tests();
+    indradb_test::indradb_tests();
     bidule_glfw_test::bidule_glfw_tests();
 }
