@@ -2,7 +2,7 @@ extern crate glfw;
 
 use bidule::Stream;
 
-use glfw::{Action, Context, Key, FAIL_ON_ERRORS};
+use glfw::{Action, Context};
 
 
 enum Button {
@@ -31,19 +31,6 @@ fn window_event_to_type_string(event: &glfw::WindowEvent) -> String {
         _ => String::from("")
     }
 }
-
-fn handle_event(window: &mut glfw::Window, event: glfw::WindowEvent, window_event_stream: &Stream<glfw::WindowEvent>) {
-    window_event_stream.send(&event);
-}
-
-/**
-    match event {
-        glfw::WindowEvent::Key(Key::Escape, _, Action::Press, _) => {
-            window_event_stream.send(&event);
-        }
-        _ => {}
-    }
-**/
 
 pub fn bidule_glfw_tests () {
     let mut glfw = glfw::init(glfw::FAIL_ON_ERRORS).unwrap();
@@ -103,7 +90,7 @@ pub fn bidule_glfw_tests () {
 
         glfw.poll_events();
         for (_, event) in glfw::flush_messages(&events) {
-            handle_event(&mut window, event, &window_event_stream);
+            window_event_stream.send(&event);
         }
     }
 }
