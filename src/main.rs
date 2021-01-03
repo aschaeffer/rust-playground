@@ -11,6 +11,7 @@ mod linear_algebra_test;
 mod trigonometry_test;
 mod regex_test;
 mod bidule_test;
+mod deno_test;
 // mod glfw_test;
 mod bidule_glfw_test;
 
@@ -32,5 +33,6 @@ fn main() {
     regex_test::regex_tests();
     bidule_test::bidule_tests();
     // glfw_test::glfw_all_tests();
+    deno_test::deno_tests();
     bidule_glfw_test::bidule_glfw_tests();
 }

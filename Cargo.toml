@@ -26,6 +26,8 @@ ansi_term = "0.12.1"
 num_cpus = "1.13.0"
 ndarray = "0.14.0"
 bidule = "0.2.0"
+deno_core = "0.75.0"
+anyhow = "1.0.37"
 
 # indradb-lib = "1"
 # actix-web = "3"
