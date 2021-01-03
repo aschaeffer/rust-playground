@@ -7,6 +7,20 @@ database would be the most part of the implementation.
 
 ## Resources 
 
-* https://lai.me/files/patmat-demo.pdf
-* http://www.zhengyi.one/downloads/GraphDB-Rust-Syd-19.pdf
-* https://longbinlai.github.io/files/patmat-exp.pdf
+### IndraDB
+
+* https://github.com/indradb/indradb
+* https://crates.io/crates/indradb
+* https://crates.io/crates/indradb-lib
+
+### OxiGraph
+
+* https://github.com/oxigraph/oxigraph
+* https://crates.io/crates/oxigraph
+* https://docs.rs/oxigraph/0.1.1/oxigraph/
+
+### RocksDB
+
+* https://github.com/rust-rocksdb/rust-rocksdb
+* https://crates.io/crates/rocksdb
+* https://docs.rs/rocksdb/0.15.0/rocksdb/
