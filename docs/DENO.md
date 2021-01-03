@@ -27,6 +27,12 @@ because it's possible
 
 https://github.com/SyrupThinker/deno/blob/559ce3f45e8989f2f7f9629eb09d1244ffbe6ce2/core/examples/hello_world.rs
 
+## Interaction with V8
+
+* https://denolib.gitbook.io/guide/advanced/interaction-with-v8
+* https://denolib.github.io/v8-docs/
+* https://v8.dev/docs/embed
+
 ## Resources
 
 * https://deno.land/manual/embedding_deno
@@ -35,7 +41,3 @@ https://github.com/SyrupThinker/deno/blob/559ce3f45e8989f2f7f9629eb09d1244ffbe6c
 * https://github.com/denoland/rusty_v8
 * https://t3n.de/news/deno-1-steckt-dino-logo-1280484/
 
-
-Cube getRootCube()
-List<Cube> getChildCubes(Cube cube)
-void setCube(Cube cube)
