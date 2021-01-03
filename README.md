@@ -15,4 +15,21 @@
   - [x] Low-Level Access to the V8 library
 - [x] Include static resources into the binary
 - [ ] In-Memory Graph-Database (Entity System)
+  - [ ] CRUD Vertices
+  - [ ] Search Vertices
+  - [ ] CRUD Edges
+  - [ ] Search Edges
+  - [ ] CRUD Properties
+  - [ ] Search Properties
+  - [ ] Reactive Properties
+  - [ ] Complex Search (multiple hops)
+- [ ] Serialization / Deserialization
+  - [ ] JSON
+  - [ ] TOML
+- [ ] GRPC
+  - [ ] Server
+  - [ ] Client
+- [ ] GraphQL
+  - [ ] Server
 - [ ] Use Vulkan-Renderer as a Library (C++)
+- [ ] HTTP2 / REST web server
