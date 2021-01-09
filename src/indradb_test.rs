@@ -1,4 +1,4 @@
-use indradb::{Datastore, MemoryDatastore, Transaction, Vertex, Edge, Type, RangeVertexQuery, SpecificVertexQuery, VertexQueryExt};
+use indradb::{Datastore, MemoryDatastore, Transaction, Vertex, Edge, Type, RangeVertexQuery, SpecificVertexQuery, VertexQueryExt, EdgeKey, SpecificEdgeQuery, EdgePropertyQuery, EdgeQueryExt, EdgeDirection};
 use serde_json::{json, Result, Value};
 
 pub fn indradb_tests() {
@@ -60,7 +60,60 @@ pub fn indradb_tests() {
     }
 
     // Define a new type (relation type)
-    // let rel_type_points_to = Type::new("points_to").unwrap();
+    let rel_type_looks_at = Type::new("looks_at").unwrap();
 
+    println!("Player 1 has {} incoming edges of type looks_at", transaction.get_edge_count(player_1.id, Some(&rel_type_looks_at.clone()), EdgeDirection::Inbound).unwrap());
 
+    let edge_key = EdgeKey::new(player_1.id, rel_type_looks_at.clone(), camera_1.id);
+
+    // Record the start and end time. Round off the the nanoseconds off the
+    // start time, since some implementations may not have that level of
+    // accuracy.
+    let create_edge_result = transaction.create_edge(&edge_key.clone());
+    if create_edge_result.is_ok() {
+        println!("Created edge: Camera 1 --[looks_at]--> Player 1");
+    }
+
+    println!("Player 1 has {} incoming edges of type looks_at", transaction.get_edge_count(player_1.id, Some(&rel_type_looks_at.clone()), EdgeDirection::Inbound).unwrap());
+
+    let edge_query = SpecificEdgeQuery::single(edge_key);
+    let edge_property_query_looks_at_distance = edge_query.clone().property("distance");
+
+    println!("Edge looks_at has {} properties", transaction.get_edge_properties(edge_property_query_looks_at_distance.clone()).unwrap().len());
+    let looks_at_distance = json!(32.0);
+    let create_edge_property_result = transaction.set_edge_properties(
+        edge_property_query_looks_at_distance.clone(),
+        &looks_at_distance
+    );
+    if create_edge_property_result.is_ok() {
+        println!("Created edge property: looksAt.distance");
+    }
+    println!("Edge looks_at has {} properties", transaction.get_edge_properties(edge_property_query_looks_at_distance.clone()).unwrap().len());
+
+    let edges = transaction.get_edges(edge_query.clone()).unwrap();
+
+    println!("Query all relations of type look at");
+    for edge in edges.iter() {
+        println!("Edge {}--[{}]-->{}: Date: {} ",
+                 edge.key.outbound_id,
+                 edge.key.t.0,
+                 edge.key.inbound_id,
+                 edge.created_datetime.to_string()
+        );
+
+        let edge_properties = transaction.get_all_edge_properties(edge_query.clone());
+        if edge_properties.is_ok() {
+            let edge_properties = edge_properties.unwrap()[0].clone();
+            let edge_key = edge_properties.edge.key;
+            for edge_property in edge_properties.props.iter() {
+                println!("  {}--[{}]-->{}: {} = {} ",
+                         edge_key.outbound_id,
+                         edge_key.t.0,
+                         edge_key.inbound_id,
+                         edge_property.name,
+                         edge_property.value.to_string()
+                );
+            }
+        }
+    }
 }

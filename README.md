@@ -15,14 +15,14 @@
   - [x] Low-Level Access to the V8 library
 - [x] Include static resources into the binary
 - [ ] In-Memory Graph-Database (Entity System)
-  - [ ] CRUD Vertices
-  - [ ] Search Vertices
-  - [ ] CRUD Edges
-  - [ ] Search Edges
-  - [ ] CRUD Properties
-  - [ ] Search Properties
-  - [ ] Reactive Properties
+  - [x] CRUD Vertices
+  - [x] Search Vertices
+  - [x] CRUD Edges
+  - [x] Search Edges
+  - [x] CRUD Properties
+  - [x] Search Properties
   - [ ] Complex Search (multiple hops)
+- [ ] Graph Database & Reactive Streams
 - [ ] Serialization / Deserialization
   - [ ] JSON
   - [ ] TOML
@@ -33,3 +33,11 @@
   - [ ] Server
 - [ ] Use Vulkan-Renderer as a Library (C++)
 - [ ] HTTP2 / REST web server
+- [ ] Hot reloading
+  - [ ] https://github.com/phaazon/warmy
+  - [ ] https://github.com/a1phyr/assets_manager
+- [ ] Profiling
+  - [ ] https://crates.io/crates/profiling
+  - [ ] https://optick.dev/
+- [ ] Text User Interface
+  - [ ] https://github.com/fdehau/tui-rs

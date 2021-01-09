@@ -33,3 +33,6 @@
 * When you need efficiency and performance
 * When you need non-vulnerable software
 
+## 4. Resources
+
+* https://blog.knoldus.com/rust-can-never-be-null/
