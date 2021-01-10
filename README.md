@@ -23,9 +23,9 @@
   - [x] Search Properties
   - [ ] Complex Search (multiple hops)
 - [ ] Graph Database & Reactive Streams
-- [ ] Serialization / Deserialization
+- [x] Serialization / Deserialization
   - [x] JSON (in fact Rust has a framework for different types of serialization in contrast to C++)
-  - [ ] TOML
+  - [x] TOML
 - [ ] GRPC
   - [ ] Server
   - [ ] Client
