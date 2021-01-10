@@ -1,5 +1,14 @@
 # Research Rust
 
+## The following technologies are evaluated
+
+* How a graph database can be integrated (the main technology behind the entity system)
+* How data from the entity system / graph database can be serialized and deserialized (JSON/TOML/...)
+* How data from the entity system / graph database can be synchronized with other instances (gRPC)
+* How data from the entity system / graph database can be provided to a web user interface (REST / GraphQL)
+* How reactive streams can be integrated (the main technology behind the visual scripting system)
+* How a scripting engine can be integrated (we prefer javascript) which is able to interact with the entity system
+
 ## Is Rust suitable for Inexor?
 
 - [x] Logging
