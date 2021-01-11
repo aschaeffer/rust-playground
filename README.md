@@ -44,7 +44,7 @@
     - [x] CRUD Properties
     - [x] Search Properties
     - [ ] Complex Search (multiple hops)
-  - [ ] Graph Database & Reactive Streams
+    - [ ] Graph Database & Reactive Streams -> Moved to the RECS-POC
   - [ ] GRPC
     - [ ] Server
     - [ ] Client
@@ -56,8 +56,10 @@
 - [ ] Integration Capabilities
   - [ ] Use Vulkan-Renderer as a Library (C++)
   - [ ] Cxx Wrapper for C++
+  - [ ] Can we use whole objects created in the C++-Library?
 - [ ] CI / Packaging
   - [x] Cargo Package Management
+  - [ ] Build Time Information
   - [ ] GitHub Actions Rust Build
   - [ ] Cross Platform
   - [ ] Build Snap
