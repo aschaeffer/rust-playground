@@ -18,6 +18,10 @@ mod bidule_glfw_test;
 mod indradb_test;
 mod serde_test;
 mod hot_reload_test;
+mod build_time_information_test;
+
+#[macro_use]
+extern crate shadow_rs;
 
 #[macro_use]
 extern crate derive_builder;
@@ -40,7 +44,8 @@ fn main() {
     static_resources_test::static_resources_tests();
     deno_test::deno_tests();
     indradb_test::indradb_tests();
-    bidule_glfw_test::bidule_glfw_tests();
+    // bidule_glfw_test::bidule_glfw_tests();
     serde_test::serde_tests();
     hot_reload_test::hot_reload_tests();
+    build_time_information_test::build_time_information_tests();
 }

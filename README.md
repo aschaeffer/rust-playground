@@ -59,7 +59,7 @@
   - [ ] Can we use whole objects created in the C++-Library?
 - [ ] CI / Packaging
   - [x] Cargo Package Management
-  - [ ] Build Time Information
+  - [x] Build Time Information
   - [ ] GitHub Actions Rust Build
   - [ ] Cross Platform
   - [ ] Build Snap
