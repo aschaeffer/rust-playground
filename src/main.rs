@@ -19,6 +19,7 @@ mod indradb_test;
 mod serde_test;
 mod hot_reload_test;
 mod build_time_information_test;
+mod sysinfo_test;
 
 #[macro_use]
 extern crate shadow_rs;
@@ -48,4 +49,5 @@ fn main() {
     serde_test::serde_tests();
     hot_reload_test::hot_reload_tests();
     build_time_information_test::build_time_information_tests();
+    sysinfo_test::sysinfo_tests();
 }
