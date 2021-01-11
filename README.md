@@ -22,6 +22,7 @@
     - [x] Trigonometry
   - [x] Asset Manager + Hot reloading
     - [x] https://github.com/a1phyr/assets_manager
+  - [x] Gather Hardware Information
   - [ ] Profiling
     - [ ] https://crates.io/crates/profiling
     - [ ] https://optick.dev/
