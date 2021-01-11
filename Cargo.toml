@@ -35,5 +35,6 @@ serde_json = "^1.0.57"
 strum = { version = "0.20", features = ["derive", "strum_macros"] }
 syn = "=1.0.57"
 toml = "0.5.8"
+assets_manager = { version = "0.4.3", features = ["hot-reloading", "json"] }
 
 # actix-web = "3"

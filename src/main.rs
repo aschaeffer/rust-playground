@@ -17,6 +17,7 @@ mod static_resources_test;
 mod bidule_glfw_test;
 mod indradb_test;
 mod serde_test;
+mod hot_reload_test;
 
 #[macro_use]
 extern crate derive_builder;
@@ -41,4 +42,5 @@ fn main() {
     indradb_test::indradb_tests();
     bidule_glfw_test::bidule_glfw_tests();
     serde_test::serde_tests();
+    hot_reload_test::hot_reload_tests();
 }

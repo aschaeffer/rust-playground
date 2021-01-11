@@ -20,9 +20,8 @@
   - [x] Math (Game Engine / Physics / Particle System)
     - [x] Linear Algebra
     - [x] Trigonometry
-  - [ ] Hot reloading
-    - [ ] https://github.com/phaazon/warmy
-    - [ ] https://github.com/a1phyr/assets_manager
+  - [x] Asset Manager + Hot reloading
+    - [x] https://github.com/a1phyr/assets_manager
   - [ ] Profiling
     - [ ] https://crates.io/crates/profiling
     - [ ] https://optick.dev/
