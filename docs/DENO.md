@@ -40,4 +40,4 @@ https://github.com/SyrupThinker/deno/blob/559ce3f45e8989f2f7f9629eb09d1244ffbe6c
 * https://docs.rs/deno_core/0.75.0/deno_core/
 * https://github.com/denoland/rusty_v8
 * https://t3n.de/news/deno-1-steckt-dino-logo-1280484/
-
+* https://www.secondstate.io/articles/deno-webassembly-rust-wasi/
