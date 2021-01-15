@@ -54,6 +54,8 @@
   - [ ] HTTP2 / REST web server
   - [ ] Text User Interface
     - [ ] https://github.com/fdehau/tui-rs
+  - [ ] Loading 3D Models
+    - [ ] https://github.com/gltf-rs/gltf
 - [ ] Integration Capabilities
   - [ ] Use Vulkan-Renderer as a Library (C++)
   - [ ] Cxx Wrapper for C++
