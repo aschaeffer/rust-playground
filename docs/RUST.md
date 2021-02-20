@@ -36,3 +36,4 @@
 ## 4. Resources
 
 * https://blog.knoldus.com/rust-can-never-be-null/
+* https://rustyyato.github.io/rust/syntactic/sugar/2019/01/17/Closures-Magic-Functions.html

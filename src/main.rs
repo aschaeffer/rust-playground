@@ -20,6 +20,7 @@ mod serde_test;
 mod hot_reload_test;
 mod build_time_information_test;
 mod sysinfo_test;
+mod evalexpr_test;
 
 #[macro_use]
 extern crate shadow_rs;
@@ -50,4 +51,5 @@ fn main() {
     hot_reload_test::hot_reload_tests();
     build_time_information_test::build_time_information_tests();
     sysinfo_test::sysinfo_tests();
+    evalexpr_test::evalexpr_tests();
 }

@@ -37,15 +37,14 @@
     - [x] Execute JavaScript Files
     - [x] Define functions in Rust which can be used in JavaScript
     - [x] Low-Level Access to the V8 library
-  - [ ] Embeddable In-Memory Graph-Database (Entity System)
+  - [x] Embeddable In-Memory Graph-Database (Entity System)
     - [x] CRUD Vertices
     - [x] Search Vertices
     - [x] CRUD Edges
     - [x] Search Edges
     - [x] CRUD Properties
     - [x] Search Properties
-    - [ ] Complex Search (multiple hops)
-    - [ ] Graph Database & Reactive Streams -> Moved to the RECS-POC
+  - [x] Expression Evaluation Library
   - [ ] GRPC
     - [ ] Server
     - [ ] Client
